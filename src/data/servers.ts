@@ -1,0 +1,11 @@
+import type { ImagingServer } from '../types/platform';
+
+export const imagingServers: ImagingServer[] = [
+{ id: 's1', name: 'Main PACS', hospital: 'AIIMS Delhi', aeTitle: 'AIIMS_PACS01', host: '10.12.4.21', port: 104, vendor: 'GE Centricity', modalities: ['CT', 'MR', 'CR'], status: 'online', lastSync: '1 min ago', studiesToday: 412, latencyMs: 38 },
+{ id: 's2', name: 'Cardiology archive', hospital: 'AIIMS Delhi', aeTitle: 'AIIMS_CARD', host: '10.12.4.40', port: 11112, vendor: 'Philips IntelliSpace', modalities: ['US', 'XA'], status: 'online', lastSync: '3 min ago', studiesToday: 96, latencyMs: 52 },
+{ id: 's3', name: 'Radiology PACS', hospital: 'PGIMER Chandigarh', aeTitle: 'PGI_RAD', host: 'pacs.pgimer.edu.in', port: 104, vendor: 'Agfa Enterprise', modalities: ['CT', 'MR', 'DX'], status: 'degraded', lastSync: '26 min ago', studiesToday: 188, latencyMs: 640 },
+{ id: 's4', name: 'Orthanc edge', hospital: 'CMC Vellore', aeTitle: 'CMC_EDGE1', host: '172.16.0.8', port: 4242, vendor: 'Orthanc', modalities: ['CT', 'MR'], status: 'online', lastSync: 'Just now', studiesToday: 301, latencyMs: 24 },
+{ id: 's5', name: 'Mammography node', hospital: 'CMC Vellore', aeTitle: 'CMC_MG', host: '172.16.0.14', port: 104, vendor: 'Hologic', modalities: ['MG'], status: 'online', lastSync: '5 min ago', studiesToday: 44, latencyMs: 61 },
+{ id: 's6', name: 'Oncology PACS', hospital: 'Tata Memorial Hospital', aeTitle: 'TMH_ONCO', host: '10.40.1.5', port: 104, vendor: 'Siemens syngo', modalities: ['CT', 'PT', 'MR'], status: 'online', lastSync: '2 min ago', studiesToday: 157, latencyMs: 45 },
+{ id: 's7', name: 'Neuro PACS', hospital: 'NIMHANS', aeTitle: 'NIM_NEURO', host: '10.8.2.30', port: 104, vendor: 'Fujifilm Synapse', modalities: ['MR', 'CT'], status: 'offline', lastSync: 'Never', studiesToday: 0, latencyMs: null },
+{ id: 's8', name: 'Legacy archive', hospital: 'KEM Hospital', aeTitle: 'KEM_ARCH', host: '10.2.0.9', port: 104, vendor: 'Carestream', modalities: ['CR', 'DX'], status: 'offline', lastSync: '11 Sep 2026', studiesToday: 0, latencyMs: null }];
