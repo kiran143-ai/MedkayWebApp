@@ -2,6 +2,7 @@ import React from 'react';
 import { cn } from '../utils/cn';
 
 export const LOGO_URL = "/logo.png";
+export const LOGO_TRIMMED_URL = "/logo-trimmed.png";
 
 interface LogoProps {
   markOnly?: boolean;
@@ -16,5 +17,5 @@ export function Logo({ markOnly, className }: LogoProps) {
       </span>);
 
   }
-  return <img src={LOGO_URL} alt="MedKay AI — Care, Compassion, Trust" className={cn('h-12 w-auto self-start object-contain', className)} />;
+  return <img src={LOGO_TRIMMED_URL} alt="MedKay AI — Care, Compassion, Trust" className={cn('h-12 w-auto shrink-0 object-contain', className)} />;
 }

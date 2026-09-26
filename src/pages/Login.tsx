@@ -23,7 +23,7 @@ export function Login() {
       <main className="flex flex-1 flex-col px-6 py-8 sm:px-12">
         <div className="flex flex-1 items-center justify-center py-10">
           <div className="w-full max-w-[400px]">
-            <Logo className="mx-auto mb-10 block h-20" />
+            <Logo className="mx-auto mb-10 block h-12" />
             <AnimatePresence mode="wait" initial={false}>
               <motion.div
                 key={mode}

@@ -17,7 +17,7 @@ export function Sidebar({ collapsed, onToggle, onNavigate, badges = {} }: Sideba
   return (
     <div className="flex h-full flex-col bg-white">
       <div className={cn('flex h-16 shrink-0 items-center border-b border-line', collapsed ? 'justify-center px-2' : 'px-5')}>
-        {collapsed ? <Logo markOnly /> : <Logo className="-ml-2 h-11" />}
+        {collapsed ? <Logo markOnly /> : <Logo className="h-10" />}
       </div>
 
       <nav aria-label="Main" className="flex-1 overflow-y-auto px-3 py-4">
